@@ -29,8 +29,9 @@ function diff_hours(dt2: Date, dt1: Date) {
 
 function getSaturday() {
   let saturday = new Date();
+  let day=1;
   do {
-    saturday = nextDay(1);
+    saturday = nextDay(day++);
   }
   while(saturday.getDay() !== 6);
   
