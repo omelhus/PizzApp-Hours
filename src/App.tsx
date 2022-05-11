@@ -30,7 +30,7 @@ function diff_hours(dt2: Date, dt1: Date) {
 function getSaturday() {
   let saturday = new Date();
   if (saturday.getDay() !== 6) {
-    saturday = nextDay(7 - saturday.getDay());
+    saturday = nextDay(5 - saturday.getDay());
   }
   saturday.setHours(20);
   saturday.setMinutes(0);
